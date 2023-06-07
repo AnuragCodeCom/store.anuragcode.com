@@ -1,0 +1,120 @@
+*{
+    font-family: 'Abel', sans-serif;
+}
+
+body{
+    background: linear-gradient(176deg, rgba(18,24,27,1) 50%, rgba(32,39,55,1) 100%);
+    background-attachment: fixed;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+.main-title,.second-title,.catch-title{
+    padding: 5px;
+    margin: 0;
+}
+
+.projects-title{
+  border-left: 10px solid rgb(245, 219, 135);
+  padding-left: 25px;
+}
+
+.main-title-div{
+    font-size: 7vh;
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+@keyframes main-title-glow{
+  from {}
+  to {text-shadow: 0 0px 10px rgb(255, 255, 255),0 1px 2px rgb(67, 67, 87);}
+}
+
+.main-title{
+    justify-content: center;
+    transition: 100ms;
+    color: rgb(255, 255, 255);
+    font-family: 'Lexend Deca', sans-serif;
+    animation: font-change 7s forwards;
+    -webkit-animation: main-title-glow 3s infinite 3s;
+    animation: main-title-glow 3s infinite 3s;
+    animation-delay: 0s;
+  }
+/* 
+  .main-title:hover{
+    text-shadow: 0 0px 5px rgb(255, 255, 255),0 1px 2px rgb(67, 67, 87);
+  } */
+
+@keyframes second-title-glow{
+  from {}
+  to {text-shadow: 0 0px 10px rgb(236 72 153),0 1px 2px rgb(67, 67, 87);}
+}
+.second-title{
+  color: rgb(236 72 153);
+  letter-spacing: 0.1px;
+  word-spacing: 0.1px;
+  -webkit-animation: second-title-glow 3s infinite 10s;
+  animation: second-title-glow 3s infinite 10s;
+}
+/* .second-title:hover{
+  text-shadow: 0 0px 5px rgb(236 72 153),0 1px 2px rgb(67, 67, 87);
+} */
+
+@keyframes catch-title-glow{
+  from{}
+  to{ text-shadow: 0 0px 10px rgb(255, 166, 0),0 1px 2px rgb(67, 67, 87);}
+}
+.catch-title{
+    color: orange;
+    text-align: right;
+    -webkit-animation: catch-title-glow 3s infinite 20s;
+    animation: catch-title-glow 3s infinite 20s;
+}
+/* .catch-title:hover{
+  text-shadow: 0 0px 5px rgb(255, 166, 0),0 1px 2px rgb(67, 67, 87);
+} */
+
+  .typed-out {
+    overflow: hidden;
+    border-right: .15em solid transparent;
+    font-size: 1.6rem;
+    width: 0;
+  }
+  .main-content{
+    display: block;
+  }
+    .container {
+      display: block;
+    }
+  
+    @keyframes typing {
+      from { width: 0 ;}
+      to { width: 100% ; letter-spacing: 10px;}
+    }
+  
+    .typed-out{
+      overflow: hidden;
+      border-right: .15em solid transparent;
+      white-space: nowrap;
+      font-size: 1.6rem;
+      width: 0;
+      animation: typing 3s forwards;
+    }
+    @keyframes blink {
+      from { border-color: transparent}
+      to { border-color: white; }
+    }
+    .typed-out{
+      overflow: hidden;
+      border-right: .15em solid transparent;
+      white-space: nowrap;
+      font-size: 1.6rem;
+      width: 0;
+      animation: 
+        typing 100s steps(200) forwards,
+    }
+    .main-title-div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
